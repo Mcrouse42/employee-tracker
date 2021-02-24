@@ -11,7 +11,7 @@ VALUES
 
 INSERT INTO role (title, salary, department_id)
 VALUES
-    ('Captain', 100,000, null),
+    ('Captain', 100000, null),
     ('Commanding officer', 60000, null),
     ('Chief engineer', 55000, 1),
     ('Security officer', 40000, 3),
