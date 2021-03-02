@@ -184,24 +184,24 @@ const promptInitialChoices = () => {
     });
 };
 
-// // DB query functions
-// // Function to view all departments in a table
-// viewAllDep = () => {
-//   db.getAllDep()
-//     .then((res) => {
-//       console.log(
-//         "++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++\n"
-//       );
-//       console.table(res);
-//       console.log(
-//         "++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++\n"
-//       );
-//       promptInitialChoices();
-//     })
-//     .catch((err) => {
-//       if (err) throw err;
-//     });
-// };
+// DB query functions
+// Function to view all departments in a table
+viewAllDep = () => {
+  db.getAllDep()
+    .then((res) => {
+      console.log(
+        "++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++\n"
+      );
+      console.table(res);
+      console.log(
+        "++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++\n"
+      );
+      promptInitialChoices();
+    })
+    .catch((err) => {
+      if (err) throw err;
+    });
+};
 
 // // Function to view all roles in a table
 // viewAllRoles = () => {
