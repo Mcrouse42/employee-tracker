@@ -203,23 +203,23 @@ viewAllDep = () => {
     });
 };
 
-// // Function to view all roles in a table
-// viewAllRoles = () => {
-//   db.getAllRole()
-//     .then((res) => {
-//       console.log(
-//         "++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++\n"
-//       );
-//       console.table(res);
-//       console.log(
-//         "++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++\n"
-//       );
-//       promptInitialChoices();
-//     })
-//     .catch((err) => {
-//       if (err) throw err;
-//     });
-// };
+// Function to view all roles in a table
+viewAllRoles = () => {
+  db.getAllRole()
+    .then((res) => {
+      console.log(
+        "++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++\n"
+      );
+      console.table(res);
+      console.log(
+        "++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++\n"
+      );
+      promptInitialChoices();
+    })
+    .catch((err) => {
+      if (err) throw err;
+    });
+};
 
 // // Function to view all employees in a table
 // viewAllEmployees = () => {
