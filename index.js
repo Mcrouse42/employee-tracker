@@ -239,19 +239,19 @@ viewAllEmployees = () => {
     });
 };
 
-// // Function to add a department to the DB
-// addADepartment = ({ departmentName }) => {
-//   db.addDep(departmentName)
-//     .then((res) => {
-//       console.log(`++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-//                     Department Added!
-// ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++`);
-//       promptInitialChoices();
-//     })
-//     .catch((err) => {
-//       if (err) throw err;
-//     });
-// };
+// Function to add a department to the DB
+addADepartment = ({ departmentName }) => {
+  db.addDep(departmentName)
+    .then((res) => {
+      console.log(`++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+                    Department Added!
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++`);
+      promptInitialChoices();
+    })
+    .catch((err) => {
+      if (err) throw err;
+    });
+};
 
 // // Function to add a role to the DB
 // addARole = ({ roleName, salary, roleDepartment }) => {
