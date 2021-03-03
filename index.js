@@ -267,19 +267,19 @@ addARole = ({ roleName, salary, roleDepartment }) => {
     });
 };
 
-// // Function to add an employee to the DB
-// addAnEmployee = ({ empFirstName, empLastName, empRole, empManager }) => {
-//   db.addEmp(empFirstName, empLastName, empRole, empManager)
-//     .then((res) => {
-//       console.log(`++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-//                     Employee Added!
-// ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++`);
-//       promptInitialChoices();
-//     })
-//     .catch((err) => {
-//       if (err) throw err;
-//     });
-// };
+// Function to add an employee to the DB
+addAnEmployee = ({ empFirstName, empLastName, empRole, empManager }) => {
+  db.addEmp(empFirstName, empLastName, empRole, empManager)
+    .then((res) => {
+      console.log(`++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+                    Employee Added!
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++`);
+      promptInitialChoices();
+    })
+    .catch((err) => {
+      if (err) throw err;
+    });
+};
 
 // // Function to update an employee's role in the DB
 // updateAnEmployee = ({ roleChoices, empChoices }) => {
