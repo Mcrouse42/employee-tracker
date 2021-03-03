@@ -253,19 +253,19 @@ addADepartment = ({ departmentName }) => {
     });
 };
 
-// // Function to add a role to the DB
-// addARole = ({ roleName, salary, roleDepartment }) => {
-//   db.addRole(roleName, salary, roleDepartment)
-//     .then((res) => {
-//       console.log(`++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-//                     Role Added!
-// ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++`);
-//       promptInitialChoices();
-//     })
-//     .catch((err) => {
-//       if (err) throw err;
-//     });
-// };
+// Function to add a role to the DB
+addARole = ({ roleName, salary, roleDepartment }) => {
+  db.addRole(roleName, salary, roleDepartment)
+    .then((res) => {
+      console.log(`++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+                    Role Added!
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++`);
+      promptInitialChoices();
+    })
+    .catch((err) => {
+      if (err) throw err;
+    });
+};
 
 // // Function to add an employee to the DB
 // addAnEmployee = ({ empFirstName, empLastName, empRole, empManager }) => {
