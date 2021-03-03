@@ -221,23 +221,23 @@ viewAllRoles = () => {
     });
 };
 
-// // Function to view all employees in a table
-// viewAllEmployees = () => {
-//   db.getAllEmployee()
-//     .then((res) => {
-//       console.log(
-//         "++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++\n"
-//       );
-//       console.table(res);
-//       console.log(
-//         "++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++\n"
-//       );
-//       promptInitialChoices();
-//     })
-//     .catch((err) => {
-//       if (err) throw err;
-//     });
-// };
+// Function to view all employees in a table
+viewAllEmployees = () => {
+  db.getAllEmployee()
+    .then((res) => {
+      console.log(
+        "++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++\n"
+      );
+      console.table(res);
+      console.log(
+        "++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++\n"
+      );
+      promptInitialChoices();
+    })
+    .catch((err) => {
+      if (err) throw err;
+    });
+};
 
 // // Function to add a department to the DB
 // addADepartment = ({ departmentName }) => {
