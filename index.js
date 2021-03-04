@@ -313,3 +313,22 @@ updateDeptArray = () => {
     });
 };
 
+// Update Role array
+updateRoleArray = () => {
+  db.getRoleChoices()
+    .then((res) => {
+      roleChoices = [];
+      for (let i = 0; i < res.length; i++) {
+        roleChoices.push({
+          name: res[i].title,
+          value: res[i].id,
+        });
+      }
+    })
+    .catch((err) => {
+      if (err) throw err;
+    });
+};
+
+
+
