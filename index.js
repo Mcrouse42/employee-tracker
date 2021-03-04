@@ -294,3 +294,22 @@ updateAnEmployee = ({ roleChoices, empChoices }) => {
       if (err) throw err;
     });
 };
+
+// Functions for updating the arrays
+// Update Department array
+updateDeptArray = () => {
+  db.getDepChoices()
+    .then((res) => {
+      depChoices = [];
+      for (let i = 0; i < res.length; i++) {
+        depChoices.push({
+          name: res[i].name,
+          value: res[i].id,
+        });
+      }
+    })
+    .catch((err) => {
+      if (err) throw err;
+    });
+};
+
