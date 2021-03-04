@@ -281,85 +281,16 @@ addAnEmployee = ({ empFirstName, empLastName, empRole, empManager }) => {
     });
 };
 
-// // Function to update an employee's role in the DB
-// updateAnEmployee = ({ roleChoices, empChoices }) => {
-//   db.updateEmp(roleChoices, empChoices)
-//     .then((res) => {
-//       console.log(`++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-//                     Employee Updated!
-// ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++`);
-//       promptInitialChoices();
-//     })
-//     .catch((err) => {
-//       if (err) throw err;
-//     });
-// };
-
-// // Functions for updating the arrays
-// // Update Department array
-// updateDeptArray = () => {
-//   db.getDepChoices()
-//     .then((res) => {
-//       depChoices = [];
-//       for (let i = 0; i < res.length; i++) {
-//         depChoices.push({
-//           name: res[i].name,
-//           value: res[i].id,
-//         });
-//       }
-//     })
-//     .catch((err) => {
-//       if (err) throw err;
-//     });
-// };
-
-// // Update Role array
-// updateRoleArray = () => {
-//   db.getRoleChoices()
-//     .then((res) => {
-//       roleChoices = [];
-//       for (let i = 0; i < res.length; i++) {
-//         roleChoices.push({
-//           name: res[i].title,
-//           value: res[i].id,
-//         });
-//       }
-//     })
-//     .catch((err) => {
-//       if (err) throw err;
-//     });
-// };
-
-// // Update Employee array
-// updateEmployeeArray = () => {
-//   db.getEmpChoices()
-//     .then((res) => {
-//       empChoices = [];
-//       for (let i = 0; i < res.length; i++) {
-//         empChoices.push({
-//           name: res[i].name,
-//           value: res[i].id,
-//         });
-//       }
-//     })
-//     .catch((err) => {
-//       if (err) throw err;
-//     });
-// };
-
-// // Update Manager array
-// updateManagerArray = () => {
-//   db.getManagerChoices()
-//     .then((res) => {
-//       managerChoices = [];
-//       for (let i = 0; i < res.length; i++) {
-//         managerChoices.push({
-//           name: res[i].name,
-//           value: res[i].id,
-//         });
-//       }
-//     })
-//     .catch((err) => {
-//       if (err) throw err;
-//     });
-// };
+// Function to update an employee's role in the DB
+updateAnEmployee = ({ roleChoices, empChoices }) => {
+  db.updateEmp(roleChoices, empChoices)
+    .then((res) => {
+      console.log(`++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+                    Employee Updated!
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++`);
+      promptInitialChoices();
+    })
+    .catch((err) => {
+      if (err) throw err;
+    });
+};
