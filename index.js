@@ -330,5 +330,24 @@ updateRoleArray = () => {
     });
 };
 
+// Update Employee array
+updateEmployeeArray = () => {
+  db.getEmpChoices()
+    .then((res) => {
+      empChoices = [];
+      for (let i = 0; i < res.length; i++) {
+        empChoices.push({
+          name: res[i].name,
+          value: res[i].id,
+        });
+      }
+    })
+    .catch((err) => {
+      if (err) throw err;
+    });
+};
+
+
+
 
 
