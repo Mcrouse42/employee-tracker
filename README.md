@@ -27,6 +27,11 @@
 
   [Walkthrough Video Link](https://drive.google.com/file/d/1iSmGY8lCZbCjdmrqW62bgRwuyOQm9Bx8/view?usp=sharing)
   
+  ## Technology used 
+  Javascript
+  MySQL/MySQL2
+  Node.js
+  
   ## Contribute <a name="contribute"></a>
   If you would like to contribute you can fork this repo and clone it to your own computer. 
 
