@@ -347,6 +347,23 @@ updateEmployeeArray = () => {
     });
 };
 
+// Update Manager array
+updateManagerArray = () => {
+  db.getManagerChoices()
+    .then((res) => {
+      managerChoices = [];
+      for (let i = 0; i < res.length; i++) {
+        managerChoices.push({
+          name: res[i].name,
+          value: res[i].id,
+        });
+      }
+    })
+    .catch((err) => {
+      if (err) throw err;
+    });
+};
+
 
 
 
