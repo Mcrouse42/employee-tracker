@@ -19,7 +19,7 @@ VALUES
     ('Chief Meidcal officer', 50000, 2),
     ('Counselor', 50000, null),
     ('Chief operation officer', 55000, 4),
-    ('Chief engineer', 50000, 1);
+   
 
 INSERT INTO employee (first_name, last_name, role_id, manager_id)
 VALUES
