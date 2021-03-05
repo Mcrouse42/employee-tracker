@@ -23,7 +23,7 @@
   Once installed you will want to run the program. To do so enter this into the command line/terminal:
   `npm start`
   
-  From there you can view, add or update any employee, department or role.
+  From there you will follow the prompts to view, add or update any employee, department or role.
 
   [Walkthrough Video Link](https://drive.google.com/file/d/1iSmGY8lCZbCjdmrqW62bgRwuyOQm9Bx8/view?usp=sharing)
   
